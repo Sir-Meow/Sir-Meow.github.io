@@ -1,0 +1,19 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+<h1 style="font-family:Poppins;">Login</h1>
+<title>Login</title>
+<input type="text" id="login">
+<button onclick="login()" style="backgroundcolor:gray;color:black;"> Login</button>
+<script>
+function login() {
+    var value = document.getElementById("login").value;
+    if (value == "History1234"){
+        window.alert("Access Granted.");
+        window.location.reload()
+        window.location.replace("revision.html")
+    } else{
+        window.alert("Access denied :/");
+    }
+}
+
+
+</script>
